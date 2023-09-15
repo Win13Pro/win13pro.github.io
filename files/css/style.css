@@ -74,7 +74,7 @@ nav a {
 .resource p {
     font-size: 16px;
     color: var(--resource-text-color);
-    line-height: 0.3;
+    line-height: 1;
 }
 
 .resource a {
