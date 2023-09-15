@@ -1,0 +1,118 @@
+:root {
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --link-color: #0078D4;
+    --resource-background-color: #F4F4F4; 
+    --resource-border-color: #DDD; 
+    --resource-title-color: #0078D4;
+    --resource-text-color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #333;
+        --text-color: #fff;
+        --link-color: #0078D4;
+        --resource-background-color: #444; 
+        --resource-border-color: #666; 
+        --resource-title-color: #0078D4; 
+        --resource-text-color: #ccc;
+    }
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: var(--link-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+nav ul {
+    background-color: var(--background-color);
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav li {
+    display: inline; 
+    margin-right: 20px;
+}
+
+nav a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.resource {
+    background-color: var(--resource-background-color);
+    border: 1px solid var(--resource-border-color);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resource h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: var(--resource-title-color);
+    padding: 0;
+    margin: 0;
+}
+
+.resource p {
+    font-size: 16px;
+    color: var(--resource-text-color);
+    line-height: 0.3;
+}
+
+.resource a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--link-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.resource img{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.resource a:hover {
+    background-color: #0056A7;
+}
+
+footer {
+    background-color: var(--link-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+#hitokoto a{
+    text-decoration: none;
+    color:white;
+}
